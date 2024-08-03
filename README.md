@@ -1,5 +1,27 @@
 # 🚗🔑 kasal_vehiclekeys - FiveM Key System 
 
+items.lua
+`
+["vehiclekey"] = {
+		label = 'Araba Anahtarı',
+		weight = 10,
+		stack = false,
+		close = true,
+		consume = 0,
+		client = {image = "cuffkeys.png",},
+		server = {
+			export = 'kasal_vehiclekeys.vehiclekey'
+		},
+		buttons = {
+			{
+				label = 'Lick it',
+				action = function(slot)
+					print('You licked the burger')
+				end
+			},
+		},
+	}	`
+
 # [EN]
 
 ## 📋 Features
