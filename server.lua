@@ -7,7 +7,9 @@ exports('vehiclekey', function(event, item, inventory, slot, data)
     end
 end)
     
-RegisterCommand(Config.AdminCommands, function(source, args, rawCommand)
+lib.addCommand(Config.AdminCommands, {
+    restricted = 'group.admin'
+}, function(source, args, raw)
     local playerPed = GetPlayerPed(source)
     local vehicle = GetVehiclePedIsIn(playerPed, false)
 
@@ -30,7 +32,8 @@ RegisterCommand(Config.AdminCommands, function(source, args, rawCommand)
     else
         --print(Config.Locales.vehicle_not_found)
     end
-end, false)
+end)
+
 
 RegisterNetEvent('kasal_vehiclekeys:giveKeys')
 AddEventHandler('kasal_vehiclekeys:giveKeys', function(plate)
