@@ -1,5 +1,9 @@
 # 🚗🔑 kasal_vehiclekeys - FiveM Key System 
 
+`req ox_lib 
+req ox_inventory
+req qb_core & qbox_core`
+
 ox_inventory -> items.lua 
 
 `["vehiclekey"] = {
