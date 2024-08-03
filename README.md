@@ -12,14 +12,6 @@ items.lua
 		server = {
 			export = 'kasal_vehiclekeys.vehiclekey'
 		},
-		buttons = {
-			{
-				label = 'Lick it',
-				action = function(slot)
-					print('You licked the burger')
-				end
-			},
-		},
 	}	`
 
 # [EN]
