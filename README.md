@@ -2,8 +2,7 @@
 
 ox_inventory -> items.lua 
 
-`
-["vehiclekey"] = {
+`["vehiclekey"] = {
 		label = 'Araba Anahtarı',
 		weight = 10,
 		stack = false,
