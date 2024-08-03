@@ -1,6 +1,7 @@
 # 🚗🔑 kasal_vehiclekeys - FiveM Key System 
 
-items.lua
+ox_inventory -> items.lua 
+
 `
 ["vehiclekey"] = {
 		label = 'Araba Anahtarı',
