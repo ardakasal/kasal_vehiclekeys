@@ -30,11 +30,14 @@ Citizen.CreateThread(function()
             local dist = #(playerCoords - npcCoords)
 
             if dist < 3.0 then
-                DrawText3D(npcCoords.x, npcCoords.y, npcCoords.z + 1.0, "[E] Anahtarcı")
+                lib.showTextUI('[E] - Anahtarcı')     
+                --DrawText3D(npcCoords.x, npcCoords.y, npcCoords.z + 1.0, "[E] Anahtarcı")
 
                 if IsControlJustReleased(0, 38) then 
                     TriggerServerEvent('kasal_vehiclekeys:getVeh')
                 end
+                else 
+                lib.hideTextUI()    
             end
         end
     end
