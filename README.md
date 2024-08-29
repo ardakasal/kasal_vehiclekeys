@@ -48,7 +48,8 @@
 
 4. Start the script and enjoy using it!
 
-## Example gallery export (client side):
+## Example vehicleshop
+export (client side):
 
     ```lua
     exports['kasal_vehiclekeys']:GiveVehicleKey(plate)
